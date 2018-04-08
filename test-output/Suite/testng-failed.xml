@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="p@ssw0rd"/>
+    <parameter name="email" value="testAutomation@test.com"/>
+    <classes>
+      <class name="testCases.TestCases">
+        <methods>
+          <include name="setUpEnvironment"/>
+          <include name="openConversionTrackersTest"/>
+          <include name="verifyMandatoryFields"/>
+          <include name="verifyConversionTrackersViewContent"/>
+          <include name="addNewConversionTracker"/>
+          <include name="finishTests"/>
+          <include name="openCreateConversionTrackerModal"/>
+          <include name="loginTest"/>
+          <include name="catchExceptions"/>
+        </methods>
+      </class> <!-- testCases.TestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

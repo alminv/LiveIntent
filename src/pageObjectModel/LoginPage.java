@@ -1,0 +1,32 @@
+package pageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	private WebDriver driver;
+	
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+	@FindBy(id = "email") WebElement emailTextField;
+	@FindBy(id = "password") WebElement passwordTextField;
+	@FindBy(css = "button[type = 'submit']") WebElement LogInButton;
+		
+	public WebElement getEmailTextField() {
+		return emailTextField;
+	}
+
+	public WebElement getPasswordTextField() {
+		return passwordTextField;
+	}
+	
+	public WebElement getLogInButton() {
+		return LogInButton;
+	}	
+}

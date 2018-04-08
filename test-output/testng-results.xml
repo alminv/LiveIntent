@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43470" started-at="2018-04-08T19:41:34Z" finished-at="2018-04-08T19:42:17Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43470" started-at="2018-04-08T19:41:34Z" finished-at="2018-04-08T19:42:17Z">
+      <class name="testCases.TestCases">
+        <test-method status="PASS" signature="setUpEnvironment()[pri:0, instance:testCases.TestCases@29ee9faa]" name="setUpEnvironment" is-config="true" duration-ms="31482" started-at="2018-04-08T19:41:34Z" finished-at="2018-04-08T19:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnvironment -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:testCases.TestCases@29ee9faa]" name="loginTest" duration-ms="2622" started-at="2018-04-08T19:42:05Z" finished-at="2018-04-08T19:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testAutomation@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="32" started-at="2018-04-08T19:42:08Z" finished-at="2018-04-08T19:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=TestCases.loginTest(java.lang.String, java.lang.String)[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="openConversionTrackersTest()[pri:0, instance:testCases.TestCases@29ee9faa]" name="openConversionTrackersTest" duration-ms="585" started-at="2018-04-08T19:42:08Z" depends-on-methods="testCases.TestCases.loginTest" finished-at="2018-04-08T19:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openConversionTrackersTest -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="0" started-at="2018-04-08T19:42:09Z" finished-at="2018-04-08T19:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openConversionTrackersTest status=SUCCESS method=TestCases.openConversionTrackersTest()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="verifyConversionTrackersViewContent()[pri:0, instance:testCases.TestCases@29ee9faa]" name="verifyConversionTrackersViewContent" duration-ms="1399" started-at="2018-04-08T19:42:09Z" depends-on-methods="testCases.TestCases.openConversionTrackersTest" finished-at="2018-04-08T19:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConversionTrackersViewContent -->
+        <test-method status="PASS" signature="openCreateConversionTrackerModal()[pri:0, instance:testCases.TestCases@29ee9faa]" name="openCreateConversionTrackerModal" duration-ms="379" started-at="2018-04-08T19:42:10Z" depends-on-methods="testCases.TestCases.verifyConversionTrackersViewContent" finished-at="2018-04-08T19:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCreateConversionTrackerModal -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="0" started-at="2018-04-08T19:42:10Z" finished-at="2018-04-08T19:42:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyConversionTrackersViewContent status=SUCCESS method=TestCases.verifyConversionTrackersViewContent()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="1" started-at="2018-04-08T19:42:10Z" finished-at="2018-04-08T19:42:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCreateConversionTrackerModal status=SUCCESS method=TestCases.openCreateConversionTrackerModal()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="verifyConversionTrackerModal()[pri:0, instance:testCases.TestCases@29ee9faa]" name="verifyConversionTrackerModal" duration-ms="835" started-at="2018-04-08T19:42:10Z" depends-on-methods="testCases.TestCases.openCreateConversionTrackerModal" finished-at="2018-04-08T19:42:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConversionTrackerModal -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="0" started-at="2018-04-08T19:42:11Z" finished-at="2018-04-08T19:42:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyConversionTrackerModal status=SUCCESS method=TestCases.verifyConversionTrackerModal()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="verifyMandatoryFields()[pri:0, instance:testCases.TestCases@29ee9faa]" name="verifyMandatoryFields" duration-ms="4502" started-at="2018-04-08T19:42:11Z" depends-on-methods="testCases.TestCases.openCreateConversionTrackerModal" finished-at="2018-04-08T19:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMandatoryFields -->
+        <test-method status="FAIL" signature="addNewConversionTracker()[pri:0, instance:testCases.TestCases@29ee9faa]" name="addNewConversionTracker" duration-ms="1385" started-at="2018-04-08T19:42:16Z" depends-on-methods="testCases.TestCases.verifyMandatoryFields" finished-at="2018-04-08T19:42:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at testCases.TestCases.addNewConversionTracker(TestCases.java:184)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewConversionTracker -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="0" started-at="2018-04-08T19:42:16Z" finished-at="2018-04-08T19:42:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMandatoryFields status=SUCCESS method=TestCases.verifyMandatoryFields()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="catchExceptions(org.testng.ITestResult)[pri:0, instance:testCases.TestCases@29ee9faa]" name="catchExceptions" is-config="true" duration-ms="85" started-at="2018-04-08T19:42:17Z" finished-at="2018-04-08T19:42:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewConversionTracker status=FAILURE method=TestCases.addNewConversionTracker()[pri:0, instance:testCases.TestCases@29ee9faa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catchExceptions -->
+        <test-method status="PASS" signature="finishTests()[pri:0, instance:testCases.TestCases@29ee9faa]" name="finishTests" is-config="true" duration-ms="147" started-at="2018-04-08T19:42:17Z" finished-at="2018-04-08T19:42:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTests -->
+      </class> <!-- testCases.TestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
